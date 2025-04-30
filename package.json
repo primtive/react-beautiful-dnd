@@ -39,6 +39,7 @@
     "test:browser": "cypress open",
     "test:browser:ci": "cypress run",
     "test:coverage": "yarn test --coverage --coveragePathIgnorePatterns=/debug",
+    "prepare": "yarn build",
     "validate": "yarn prettier:check && yarn lint:eslint && yarn lint:css && yarn typecheck",
     "prettier:check": "yarn prettier --debug-check $npm_package_config_prettier_target",
     "prettier:write": "yarn prettier --write $npm_package_config_prettier_target",
